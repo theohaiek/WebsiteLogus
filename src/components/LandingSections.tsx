@@ -1,4 +1,4 @@
-import logoSemFundo from '@/assets/logus_banner_sem_fundo.png';
+import logoTransparente from '@/assets/logo_transparente.png';
 import selfPortrait from '@/assets/self-portrait.png';
 import bannerV2 from '@/assets/logus_banner_v2.png';
 import banner2 from '@/assets/logus_banner2.png';
@@ -6,30 +6,34 @@ import banner2 from '@/assets/logus_banner2.png';
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center py-20">
     <div className="section-container w-full">
-      <div className="max-w-4xl mx-auto text-center">
-        <img src={banner2} alt="Logus Soluções em Automação" className="w-80 mx-auto mb-8 animate-fade-in" />
-        <p className="text-sm font-heading tracking-[0.3em] uppercase text-primary mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Protocolo de Integração Digital Total
-        </p>
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
-          Dono de clínica, elimine <span className="text-gradient">80% das Tarefas Repetitivas</span> em 60 Dias
-        </h1>
-        <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mx-auto mb-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          Automatize operações e rastreie cada lead e paciente desde o anúncio e conversão até a consulta e o acompanhamento através de integrações personalizadas 24/7, sem depender de agências ou ter que aprender programação.
-        </p>
-        <a href="#diagnostico" className="btn-primary animate-fade-in" style={{ animationDelay: '0.5s' }}>
-          AGENDAR DIAGNÓSTICO GRATUITO
-        </a>
-        <div className="flex flex-wrap justify-center gap-8 mt-10 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-          <span className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span className="w-2 h-2 rounded-full bg-primary" /> Primeira automação em 72h
-          </span>
-          <span className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span className="w-2 h-2 rounded-full bg-primary" /> Suporte pessoal 24/7
-          </span>
-          <span className="flex items-center gap-2 text-sm text-muted-foreground">
-            <span className="w-2 h-2 rounded-full bg-primary" /> Garantia de 30 dias
-          </span>
+      <div className="max-w-6xl mx-auto lg:flex lg:items-center lg:gap-16">
+        <div className="shrink-0 lg:w-80 text-center lg:text-left mb-10 lg:mb-0">
+          <img src={logoTransparente} alt="Logus Soluções em Automação" className="w-64 lg:w-80 mx-auto lg:mx-0 animate-fade-in" />
+        </div>
+        <div className="text-center lg:text-left">
+          <p className="text-sm font-heading tracking-[0.3em] uppercase text-primary mb-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            Protocolo de Integração Digital Total
+          </p>
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-heading font-bold text-foreground leading-tight mb-6 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+            Dono de clínica, elimine <span className="text-gradient">80% das Tarefas Repetitivas</span> em 60 Dias
+          </h1>
+          <p className="text-lg sm:text-xl text-muted-foreground max-w-3xl mb-10 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            Automatize operações e rastreie cada lead e paciente desde o anúncio e conversão até a consulta e o acompanhamento através de integrações personalizadas 24/7, sem depender de agências ou ter que aprender programação.
+          </p>
+          <a href="#diagnostico" className="btn-primary animate-fade-in" style={{ animationDelay: '0.5s' }}>
+            AGENDAR DIAGNÓSTICO GRATUITO
+          </a>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-8 mt-10 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <span className="flex items-center gap-2 text-sm text-muted-foreground">
+              <span className="w-2 h-2 rounded-full bg-primary" /> Primeira automação em 72h
+            </span>
+            <span className="flex items-center gap-2 text-sm text-muted-foreground">
+              <span className="w-2 h-2 rounded-full bg-primary" /> Suporte pessoal 24/7
+            </span>
+            <span className="flex items-center gap-2 text-sm text-muted-foreground">
+              <span className="w-2 h-2 rounded-full bg-primary" /> Garantia de 30 dias
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -209,7 +213,7 @@ const DifferentialsSection = () => (
 const FounderSection = () => (
   <section className="py-24 bg-secondary/30">
     <div className="section-container">
-      <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12">
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-12">
         <img src={selfPortrait} alt="Theo Haiek - Fundador" className="w-64 h-80 object-cover rounded-2xl border border-border/50" />
         <div>
           <p className="text-xs font-heading tracking-[0.3em] uppercase text-primary mb-4">Fundador</p>
@@ -226,47 +230,48 @@ const FounderSection = () => (
 const CTASection = () => (
   <section id="diagnostico" className="py-24">
     <div className="section-container">
-      <div className="max-w-3xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-6">
-          Está Pronto Para <span className="text-gradient">Transformar Sua Clínica?</span>
-        </h2>
-        <p className="text-muted-foreground text-lg mb-10 max-w-2xl mx-auto">
-          Agende agora uma reunião de diagnóstico gratuita. Vamos mapear seus processos atuais e mostrar exatamente como podemos eliminar 80% das tarefas repetitivas da sua equipe em 60 dias.
-        </p>
-        
-        <form className="max-w-md mx-auto space-y-4 mb-10" onSubmit={e => e.preventDefault()}>
-          {["Nome", "Nome da clínica", "Email corporativo", "Telefone para contato"].map((label) => (
-            <input
-              key={label}
-              type="text"
-              placeholder={label}
-              className="w-full px-4 py-3 rounded-xl bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 font-body"
-            />
-          ))}
-          <button type="submit" className="btn-primary w-full">
-            AGENDAR DIAGNÓSTICO GRATUITO
-          </button>
-        </form>
-
-        <p className="text-primary text-sm font-semibold mb-8">
-          ⚡ Atendemos apenas 5 clínicas por mês para garantir qualidade máxima na entrega. Garanta sua vaga agora.
-        </p>
-
-        <div className="card-glass p-6 text-left max-w-md mx-auto">
-          <p className="text-sm font-heading text-foreground font-semibold mb-3">O que NÃO vai mudar se você não agir:</p>
-          <ul className="space-y-2">
-            {[
-              "Equipe continuará sobrecarregada com tarefas manuais",
-              "Você continuará sem saber de onde vêm seus pacientes",
-              "Dinheiro desperdiçado em anúncios que não convertem",
-              "Processos dependentes de pessoas específicas",
-              "Dados dispersos sem visão clara do negócio",
-            ].map((item, i) => (
-              <li key={i} className="flex items-start gap-2 text-muted-foreground text-sm">
-                <span className="text-destructive mt-0.5">✕</span> {item}
-              </li>
+      <div className="max-w-6xl mx-auto lg:flex lg:items-start lg:gap-16">
+        <div className="lg:w-1/2 text-center lg:text-left mb-12 lg:mb-0">
+          <h2 className="text-3xl sm:text-4xl font-heading font-bold mb-6">
+            Está Pronto Para <span className="text-gradient">Transformar Sua Clínica?</span>
+          </h2>
+          <p className="text-muted-foreground text-lg mb-10">
+            Agende agora uma reunião de diagnóstico gratuita. Vamos mapear seus processos atuais e mostrar exatamente como podemos eliminar 80% das tarefas repetitivas da sua equipe em 60 dias.
+          </p>
+          <p className="text-primary text-sm font-semibold mb-8">
+            ⚡ Atendemos apenas 5 clínicas por mês para garantir qualidade máxima na entrega. Garanta sua vaga agora.
+          </p>
+          <div className="card-glass p-6 text-left">
+            <p className="text-sm font-heading text-foreground font-semibold mb-3">O que NÃO vai mudar se você não agir:</p>
+            <ul className="space-y-2">
+              {[
+                "Equipe continuará sobrecarregada com tarefas manuais",
+                "Você continuará sem saber de onde vêm seus pacientes",
+                "Dinheiro desperdiçado em anúncios que não convertem",
+                "Processos dependentes de pessoas específicas",
+                "Dados dispersos sem visão clara do negócio",
+              ].map((item, i) => (
+                <li key={i} className="flex items-start gap-2 text-muted-foreground text-sm">
+                  <span className="text-destructive mt-0.5">✕</span> {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="lg:w-1/2">
+          <form className="space-y-4 mb-10" onSubmit={e => e.preventDefault()}>
+            {["Nome", "Nome da clínica", "Email corporativo", "Telefone para contato"].map((label) => (
+              <input
+                key={label}
+                type="text"
+                placeholder={label}
+                className="w-full px-4 py-3 rounded-xl bg-secondary border border-border text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 font-body"
+              />
             ))}
-          </ul>
+            <button type="submit" className="btn-primary w-full">
+              AGENDAR DIAGNÓSTICO GRATUITO
+            </button>
+          </form>
         </div>
       </div>
     </div>

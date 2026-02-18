@@ -15,24 +15,24 @@
     --popover: 216 45% 10%;
     --popover-foreground: 200 30% 90%;
 
-    --primary: 197 55% 65%;
-    --primary-foreground: 216 50% 7%;
+    --primary: 197 80% 55%;
+    --primary-foreground: 216 60% 5%;
 
-    --secondary: 216 40% 14%;
-    --secondary-foreground: 200 30% 85%;
+    --secondary: 216 55% 14%;
+    --secondary-foreground: 200 40% 85%;
 
-    --muted: 216 35% 12%;
-    --muted-foreground: 210 15% 55%;
+    --muted: 216 45% 12%;
+    --muted-foreground: 210 25% 55%;
 
-    --accent: 197 55% 65%;
-    --accent-foreground: 216 50% 7%;
+    --accent: 197 80% 55%;
+    --accent-foreground: 216 60% 5%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 216 30% 18%;
-    --input: 216 30% 18%;
-    --ring: 197 55% 65%;
+    --border: 216 40% 18%;
+    --input: 216 40% 18%;
+    --ring: 197 80% 55%;
 
     --radius: 0.75rem;
 
@@ -46,12 +46,12 @@
     --sidebar-ring: 197 55% 65%;
 
     /* Custom tokens */
-    --glow: 197 70% 55%;
-    --surface: 216 42% 11%;
-    --surface-elevated: 216 38% 15%;
-    --gradient-hero: linear-gradient(135deg, hsl(216 50% 7%) 0%, hsl(216 45% 12%) 50%, hsl(210 40% 8%) 100%);
-    --gradient-accent: linear-gradient(135deg, hsl(197 55% 65%) 0%, hsl(210 60% 50%) 100%);
-    --shadow-glow: 0 0 40px -10px hsl(197 55% 65% / 0.3);
+    --glow: 197 85% 50%;
+    --surface: 216 50% 11%;
+    --surface-elevated: 216 45% 15%;
+    --gradient-hero: linear-gradient(135deg, hsl(216 55% 7%) 0%, hsl(216 50% 12%) 50%, hsl(210 45% 8%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(197 80% 55%) 0%, hsl(210 75% 45%) 100%);
+    --shadow-glow: 0 0 40px -10px hsl(197 80% 55% / 0.4);
   }
 }
 
@@ -77,7 +77,7 @@
 
   .text-gradient {
     @apply bg-clip-text text-transparent;
-    background-image: linear-gradient(135deg, hsl(197 55% 65%) 0%, hsl(197 70% 80%) 100%);
+    background-image: linear-gradient(135deg, hsl(197 80% 55%) 0%, hsl(197 85% 72%) 100%);
   }
 
   .card-glass {
@@ -86,20 +86,20 @@
 
   .btn-primary {
     @apply inline-flex items-center justify-center px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-300;
-    background: linear-gradient(135deg, hsl(197 55% 65%) 0%, hsl(210 60% 50%) 100%);
-    color: hsl(216 50% 7%);
-    box-shadow: 0 0 30px -5px hsl(197 55% 65% / 0.4);
+    background: linear-gradient(135deg, hsl(197 80% 55%) 0%, hsl(210 75% 45%) 100%);
+    color: hsl(216 60% 5%);
+    box-shadow: 0 0 30px -5px hsl(197 80% 55% / 0.5);
   }
 
   .btn-primary:hover {
     transform: translateY(-2px);
-    box-shadow: 0 0 50px -5px hsl(197 55% 65% / 0.6);
+    box-shadow: 0 0 50px -5px hsl(197 80% 55% / 0.7);
   }
 
   .metric-number {
     @apply text-5xl sm:text-6xl font-bold;
     font-family: 'Space Grotesk', sans-serif;
-    background: linear-gradient(135deg, hsl(197 55% 65%) 0%, hsl(197 70% 80%) 100%);
+    background: linear-gradient(135deg, hsl(197 80% 55%) 0%, hsl(197 85% 72%) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -107,7 +107,7 @@
   .step-number {
     @apply text-7xl font-bold opacity-10;
     font-family: 'Space Grotesk', sans-serif;
-    color: hsl(197 55% 65%);
+    color: hsl(197 80% 55%);
   }
 
   .glow-border {
@@ -120,7 +120,7 @@
     inset: -1px;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(135deg, hsl(197 55% 65% / 0.3), transparent, hsl(197 55% 65% / 0.1));
+    background: linear-gradient(135deg, hsl(197 80% 55% / 0.35), transparent, hsl(197 80% 55% / 0.15));
     -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
     -webkit-mask-composite: xor;
     mask-composite: exclude;
