@@ -7,18 +7,19 @@ import escritorio from '@/assets/escritorio_logus.png';
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden">
     {/* Office background - dark & blurred */}
-    <div className="absolute inset-0 -z-20">
+    <div className="absolute inset-0 z-0">
       <img
         src={escritorio}
         alt=""
         className="w-full h-full object-cover"
-        style={{ filter: 'brightness(0.2) blur(4px)', transform: 'scale(1.05)' }}
+        style={{ filter: 'brightness(0.15) blur(3px)', transform: 'scale(1.05)' }}
       />
     </div>
-    {/* Gradient overlay */}
-    <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+    {/* Gradient fade to site background at bottom */}
+    <div className="absolute inset-0 z-0 bg-gradient-to-b from-transparent via-transparent to-background" />
+    <div className="absolute bottom-0 left-0 right-0 h-40 z-0 bg-gradient-to-b from-transparent to-background" />
 
-    <div className="section-container w-full">
+    <div className="section-container w-full relative z-10">
       <div className="max-w-7xl mx-auto lg:flex lg:items-center lg:gap-20">
         <div className="shrink-0 lg:w-[420px] text-center lg:text-left mb-12 lg:mb-0">
           <img src={logoTransparente} alt="Logus Soluções em Automação" className="w-80 lg:w-[420px] mx-auto lg:mx-0 animate-fade-in drop-shadow-[0_0_40px_hsl(197_80%_55%/0.3)]" />
