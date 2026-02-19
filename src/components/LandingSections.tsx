@@ -20,10 +20,7 @@ const HeroSection = () => (
     <div className="absolute bottom-0 left-0 right-0 h-40 z-0 bg-gradient-to-b from-transparent to-background" />
 
     <div className="section-container w-full relative z-10">
-      <div className="max-w-7xl mx-auto lg:flex lg:items-center lg:gap-20">
-        <div className="shrink-0 lg:w-[420px] text-center lg:text-left mb-12 lg:mb-0">
-          <img src={logoTransparente} alt="Logus Soluções em Automação" className="w-80 lg:w-[420px] mx-auto lg:mx-0 animate-fade-in drop-shadow-[0_0_40px_hsl(197_80%_55%/0.3)]" />
-        </div>
+      <div className="max-w-7xl mx-auto">
         <div className="text-center lg:text-left">
           <p className="text-base lg:text-lg font-heading tracking-[0.3em] uppercase text-primary mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Protocolo de Integração Digital Total
@@ -285,6 +282,7 @@ const CTASection = () => (
             <button type="submit" className="btn-primary w-full">
               AGENDAR DIAGNÓSTICO GRATUITO
             </button>
+            <img src={logoTransparente} alt="Logus Soluções em Automação" className="w-48 mx-auto mt-8 opacity-80" />
           </form>
         </div>
       </div>
