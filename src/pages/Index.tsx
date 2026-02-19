@@ -1,4 +1,3 @@
-import PipelineBackground from '@/components/PipelineBackground';
 import {
   HeroSection,
   ProblemsSection,
@@ -14,7 +13,6 @@ import {
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      <PipelineBackground />
       <HeroSection />
       <ProblemsSection />
       <SolutionSection />
