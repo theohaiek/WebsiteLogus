@@ -48,6 +48,13 @@ const HeroSection = () => (
         </div>
       </div>
     </div>
+
+    {/* Scroll indicator - desktop only */}
+    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-0 animate-fade-in scroll-chevrons" style={{ animationDelay: '1s' }}>
+      <svg width="20" height="10" viewBox="0 0 20 10" className="chevron-1"><polyline points="2,2 10,8 18,2" fill="none" stroke="hsl(197 80% 55%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" /></svg>
+      <svg width="20" height="10" viewBox="0 0 20 10" className="chevron-2"><polyline points="2,2 10,8 18,2" fill="none" stroke="hsl(197 80% 55%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" /></svg>
+      <svg width="20" height="10" viewBox="0 0 20 10" className="chevron-3"><polyline points="2,2 10,8 18,2" fill="none" stroke="hsl(197 80% 55%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" /></svg>
+    </div>
   </section>
 );
 
