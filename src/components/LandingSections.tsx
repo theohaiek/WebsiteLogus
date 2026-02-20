@@ -5,7 +5,7 @@ import banner2 from '@/assets/logus_banner2.png';
 import escritorio from '@/assets/escritorio_logus.png';
 
 const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden">
+  <section className="relative min-h-screen flex items-center py-24 lg:py-32">
     {/* Office background - dark & blurred */}
     <div className="absolute inset-0 z-0">
       <img
@@ -50,7 +50,7 @@ const HeroSection = () => (
     </div>
 
     {/* Scroll indicator - desktop only */}
-    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-0 animate-fade-in scroll-chevrons" style={{ animationDelay: '1s' }}>
+    <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 hidden lg:flex flex-col items-center gap-0 scroll-chevrons">
       <svg width="20" height="10" viewBox="0 0 20 10" className="chevron-1"><polyline points="2,2 10,8 18,2" fill="none" stroke="hsl(197 80% 55%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" /></svg>
       <svg width="20" height="10" viewBox="0 0 20 10" className="chevron-2"><polyline points="2,2 10,8 18,2" fill="none" stroke="hsl(197 80% 55%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" /></svg>
       <svg width="20" height="10" viewBox="0 0 20 10" className="chevron-3"><polyline points="2,2 10,8 18,2" fill="none" stroke="hsl(197 80% 55%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" /></svg>
