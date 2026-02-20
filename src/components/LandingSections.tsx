@@ -71,8 +71,8 @@ const ProblemsSection = () => (
       </p>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
         {problems.map((p, i) => (
-          <div key={i} className="card-glass glow-border p-6 hover:bg-card/80 transition-all duration-300 group">
-            <span className="text-xs font-heading tracking-wider text-primary uppercase">Problema #{i + 1}</span>
+          <div key={i} className="problem-card card-glass glow-border p-6 transition-all duration-300 group">
+            <span className="problem-label text-xs font-heading tracking-wider uppercase">Problema #{i + 1}</span>
             <h3 className="text-xl font-heading font-semibold text-foreground mt-2 mb-3">{p.title}</h3>
             <p className="text-muted-foreground text-sm leading-relaxed">{p.desc}</p>
           </div>
