@@ -1,8 +1,6 @@
 import logoTransparente from '@/assets/logo_transparente.png';
 import selfPortrait from '@/assets/self-portrait.png';
-import bannerV2 from '@/assets/logus_banner_v2.png';
-import banner2 from '@/assets/logus_banner2.png';
-import escritorio from '@/assets/escritorio_logus_corrigido.jpg';
+import escritorio from '@/assets/escritorio_logus_sem_marca_dagua_espelhado.png';
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden">
