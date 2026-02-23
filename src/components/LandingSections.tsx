@@ -2,7 +2,7 @@ import logoTransparente from '@/assets/logo_transparente.png';
 import selfPortrait from '@/assets/self-portrait.png';
 import bannerV2 from '@/assets/logus_banner_v2.png';
 import banner2 from '@/assets/logus_banner2.png';
-import escritorio from '@/assets/escritorio_logus.png';
+import escritorio from '@/assets/escritorio_logus_corrigido.jpg';
 
 const HeroSection = () => (
   <section className="relative min-h-screen flex items-center py-24 lg:py-32 overflow-hidden">
@@ -20,21 +20,21 @@ const HeroSection = () => (
     <div className="absolute bottom-0 left-0 right-0 h-40 z-0 bg-gradient-to-b from-transparent to-background" />
 
     <div className="section-container w-full relative z-10">
-      <div className="max-w-7xl mx-auto lg:flex lg:justify-end">
-        <div className="text-center lg:text-right lg:max-w-3xl">
+        <div className="max-w-7xl mx-auto lg:flex lg:justify-start">
+          <div className="text-center lg:text-left lg:max-w-3xl">
           <p className="text-base lg:text-lg font-heading tracking-[0.3em] uppercase text-primary mb-8 animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Protocolo de Integração Digital Total
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-heading font-bold text-foreground leading-tight mb-8 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             Dono de clínica, elimine <span className="text-gradient">80% das Tarefas Repetitivas</span> em 60 Dias
           </h1>
-          <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mb-12 animate-fade-in leading-relaxed lg:ml-auto" style={{ animationDelay: '0.4s' }}>
+          <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl mb-12 animate-fade-in leading-relaxed" style={{ animationDelay: '0.4s' }}>
             Automatize operações e rastreie cada lead e paciente desde o anúncio e conversão até a consulta e o acompanhamento através de integrações personalizadas 24/7, sem depender de agências ou ter que aprender programação.
           </p>
           <a href="#diagnostico" className="btn-primary text-xl px-10 py-5 animate-fade-in" style={{ animationDelay: '0.5s' }}>
             AGENDAR DIAGNÓSTICO GRATUITO
           </a>
-          <div className="flex flex-wrap justify-center lg:justify-end gap-10 mt-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+          <div className="flex flex-wrap justify-center lg:justify-start gap-10 mt-12 animate-fade-in" style={{ animationDelay: '0.6s' }}>
             <span className="flex items-center gap-3 text-base text-muted-foreground">
               <span className="w-2.5 h-2.5 rounded-full bg-primary" /> Primeira automação em 72h
             </span>
@@ -47,7 +47,7 @@ const HeroSection = () => (
           </div>
 
           {/* Scroll indicator - desktop only, inside content flow */}
-          <div className="hidden lg:flex flex-col items-center lg:items-end mt-16 scroll-chevrons">
+          <div className="hidden lg:flex flex-col items-center lg:items-start mt-16 scroll-chevrons">
             <svg width="20" height="10" viewBox="0 0 20 10" className="chevron-1"><polyline points="2,2 10,8 18,2" fill="none" stroke="hsl(197 80% 55%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" /></svg>
             <svg width="20" height="10" viewBox="0 0 20 10" className="chevron-2"><polyline points="2,2 10,8 18,2" fill="none" stroke="hsl(197 80% 55%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" /></svg>
             <svg width="20" height="10" viewBox="0 0 20 10" className="chevron-3"><polyline points="2,2 10,8 18,2" fill="none" stroke="hsl(197 80% 55%)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" opacity="0.3" /></svg>
